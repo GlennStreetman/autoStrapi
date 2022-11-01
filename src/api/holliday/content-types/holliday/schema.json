@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hollidays",
+  "info": {
+    "singularName": "holliday",
+    "pluralName": "hollidays",
+    "displayName": "Holliday"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "targetDate": {
+      "type": "date"
+    },
+    "holiday": {
+      "type": "string"
+    },
+    "daysClosed": {
+      "type": "integer"
+    }
+  }
+}

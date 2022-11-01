@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_service_service_sections",
+  "info": {
+    "displayName": "serviceSection",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "sectionImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sectionText": {
+      "type": "text",
+      "required": true
+    },
+    "sectionHeader": {
+      "type": "string",
+      "required": false
+    },
+    "orderNumber": {
+      "type": "integer"
+    }
+  }
+}

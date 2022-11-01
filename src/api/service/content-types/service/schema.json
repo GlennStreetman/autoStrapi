@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "service",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "bannerText": {
+      "type": "string",
+      "required": true
+    },
+    "orderNumber": {
+      "type": "integer",
+      "required": true
+    },
+    "section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "service.service-section"
+    }
+  }
+}
