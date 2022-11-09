@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "google_maps",
+  "info": {
+    "singularName": "google-map",
+    "pluralName": "google-maps",
+    "displayName": "googleMap",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "secretAPIKey": {
+      "type": "string"
+    },
+    "searchString": {
+      "type": "string"
+    }
+  }
+}

@@ -2,16 +2,18 @@
   "collectionName": "components_service_service_sections",
   "info": {
     "displayName": "serviceSection",
-    "icon": "apple-alt"
+    "icon": "apple-alt",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "sectionImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "sectionText": {
       "type": "text",

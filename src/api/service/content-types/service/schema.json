@@ -32,10 +32,14 @@
       "type": "integer",
       "required": true
     },
-    "section": {
+    "serviceSection": {
       "type": "component",
       "repeatable": true,
-      "component": "service.service-section"
+      "component": "service-section.service-section"
+    },
+    "shortDescription": {
+      "type": "richtext",
+      "required": true
     }
   }
 }

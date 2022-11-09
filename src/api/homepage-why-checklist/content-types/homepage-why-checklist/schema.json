@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage_why_checklists",
+  "info": {
+    "singularName": "homepage-why-checklist",
+    "pluralName": "homepage-why-checklists",
+    "displayName": "homepage-WhyChecklist",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "whyHeading": {
+      "type": "string"
+    },
+    "Checklist": {
+      "type": "component",
+      "repeatable": true,
+      "component": "why-checklist.why-checklist-items"
+    },
+    "whyPicture": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

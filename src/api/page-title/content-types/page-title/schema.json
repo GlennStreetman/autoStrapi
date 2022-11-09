@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_titles",
+  "info": {
+    "singularName": "page-title",
+    "pluralName": "page-titles",
+    "displayName": "PageTitle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Home": {
+      "type": "string"
+    },
+    "career": {
+      "type": "string"
+    },
+    "team": {
+      "type": "string"
+    },
+    "thankyou": {
+      "type": "string"
+    },
+    "resume": {
+      "type": "string"
+    },
+    "quote": {
+      "type": "string"
+    },
+    "calendar": {
+      "type": "string"
+    }
+  }
+}

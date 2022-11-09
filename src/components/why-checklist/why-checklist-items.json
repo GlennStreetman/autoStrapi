@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_why_checklist_why_checklist_items",
+  "info": {
+    "displayName": "Checklist",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "whyItem": {
+      "type": "string"
+    }
+  }
+}

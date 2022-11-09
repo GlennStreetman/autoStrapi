@@ -1,27 +1,26 @@
 {
   "kind": "singleType",
-  "collectionName": "site_links",
+  "collectionName": "banner_texts",
   "info": {
-    "singularName": "site-link",
-    "pluralName": "site-links",
-    "displayName": "Site Link",
-    "description": ""
+    "singularName": "banner-text",
+    "pluralName": "banner-texts",
+    "displayName": "bannerText"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "googleLink": {
+    "Primary": {
       "type": "string"
     },
-    "reviewLink": {
+    "secondary": {
       "type": "string"
     },
-    "socialLink": {
+    "link": {
       "type": "string"
     },
-    "homepage": {
+    "linkText": {
       "type": "string"
     }
   }

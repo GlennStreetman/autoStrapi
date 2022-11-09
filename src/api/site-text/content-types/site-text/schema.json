@@ -13,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "FPBannerText": {
-      "type": "string"
+      "type": "text"
     },
     "aboutHeading": {
       "type": "string"
@@ -29,6 +29,15 @@
     },
     "aboutBody": {
       "type": "text"
+    },
+    "contactPageTopText": {
+      "type": "string"
+    },
+    "LegalBusinessName": {
+      "type": "string"
+    },
+    "businessName": {
+      "type": "string"
     }
   }
 }
