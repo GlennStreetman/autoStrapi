@@ -19,3 +19,5 @@ AWS_ACCESS_KEY_ID=aws access key
 AWS_ACCESS_SECRET=longstringofstringsstuff
 NEXT_PUBLIC_AWS_PUBLIC_BUCKET_URL=bucketURL
 NEXT_PUBLIC_AWS_PUBLIC_BUCKET_URL_DOMAIN=bucketDomainstring
+
+NEXT_REVALIDATE=secretToken

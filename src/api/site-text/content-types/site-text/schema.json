@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "FPBannerText": {
-      "type": "text"
-    },
     "aboutHeading": {
       "type": "string"
     },
