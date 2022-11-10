@@ -107,9 +107,15 @@ coverage
 ############################
 
 .env
+.envDev
+.envProd
 license.txt
 exports
 *.cache
 dist
 build
 .strapi-updater.json
+
+
+.envDev
+.envProd
