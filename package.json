@@ -6,10 +6,12 @@
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
-    "build": "strapi build",
+    "build": "NODE_ENV=production strapi build",
     "strapi": "strapi",
-    "dUp": "docker-compose -f dev.yml up",
-    "dBuild": "docker-compose -f dev.yml up --build"
+    "dUp": "cp .envDev .env && docker-compose -f dev.yml up",
+    "dBuild": "cp .envDev .env &&  docker-compose -f dev.yml up --build",
+    "pUp": "cp .envProd .env && docker-compose -f Prod.yml up",
+    "pBuild": "cp .envProd .env && docker-compose -f Prod.yml up --build"
   },
   "dependencies": {
     "@apollo/client": "^3.7.1",
@@ -18,7 +20,8 @@
     "@strapi/plugin-users-permissions": "4.4.5",
     "@strapi/provider-upload-aws-s3": "^4.4.5",
     "@strapi/strapi": "4.4.5",
-    "better-sqlite3": "7.4.6"
+    "better-sqlite3": "7.4.6",
+    "pg": "^8.8.0"
   },
   "author": {
     "name": "Glenn Streetman"

@@ -6,7 +6,7 @@ services:
     container_name: strapi
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile.prod
     image: strapi:latest
     restart: unless-stopped
     env_file: .env
@@ -21,25 +21,19 @@ services:
       ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
       APP_KEYS: ${APP_KEYS}
       NODE_ENV: ${NODE_ENV}
-    volumes:
-      - ./config:/opt/app/config
-      - ./src:/opt/app/src
-      - ./package.json:/opt/package.json
-      - ./yarn.lock:/opt/yarn.lock
-      - ./.env:/opt/app/.env
-      - ./public/uploads:/opt/app/public/uploads
+    # volumes:
+    #   - ./config:/opt/app/config
+    #   - ./src:/opt/app/src
+    #   - ./package.json:/opt/package.json
+    #   - ./yarn.lock:/opt/yarn.lock
+    #   - ./.env:/opt/app/.env
+    #   - ./public/uploads:/opt/app/public/uploads
     ports:
       - '1337:1337'
     # networks:
     #   - strapi
     # depends_on:
     #   - strapiDB
-
-networks:
-    default:
-        external: true
-        name: "${DOCKER_NETWORK}"
-
 
   # strapiDB:
   #   container_name: strapiDB
@@ -63,7 +57,7 @@ networks:
 # volumes:
 #   strapi-data:
 
-# networks:
-#   strapi:
-#     name: Strapi
-#     driver: bridge
+networks:
+    default:
+        external: true
+        name: "${DOCKER_NETWORK}"
