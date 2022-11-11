@@ -120,3 +120,5 @@ build
 .envDev
 .envProd
 .envDevelop
+
+package-lock.json
