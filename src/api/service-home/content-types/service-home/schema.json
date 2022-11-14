@@ -17,6 +17,11 @@
     },
     "topText": {
       "type": "richtext"
+    },
+    "serviceChecklistItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "service-checklist.service-checklist"
     }
   }
 }

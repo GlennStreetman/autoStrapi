@@ -12,23 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "aboutHeading": {
-      "type": "string"
-    },
     "thanksResume": {
-      "type": "text"
-    },
-    "holidayMessage": {
       "type": "text"
     },
     "thanksService": {
       "type": "text"
-    },
-    "aboutBody": {
-      "type": "text"
-    },
-    "contactPageTopText": {
-      "type": "string"
     },
     "LegalBusinessName": {
       "type": "string"

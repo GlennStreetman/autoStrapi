@@ -36,22 +36,6 @@
         "images"
       ]
     },
-    "emailLight": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "emailDark": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "emailImage": {
       "type": "media",
       "multiple": false,
@@ -61,11 +45,12 @@
       ]
     },
     "logoWhite": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_service_checklist_service_checklists",
+  "info": {
+    "displayName": "serviceChecklist",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "serviceChecklist": {
+      "type": "string"
+    }
+  }
+}
