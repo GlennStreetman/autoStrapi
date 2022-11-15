@@ -11,7 +11,8 @@
     "dUp": "cp .envDev .env && docker-compose -f dev.yml up",
     "dBuild": "cp .envDev .env &&  docker-compose -f dev.yml up --build",
     "pUp": "cp .envProd .env && docker-compose -f Prod.yml up",
-    "pBuild": "cp .envProd .env && docker-compose -f Prod.yml up --build"
+    "pBuild": "cp .envProd .env && docker-compose -f Prod.yml up --build",
+    "pushStrapi": "docker ps | grep autoStrapi | awk {'print $1'} | xargs -i docker commit {} autostrapi &&  docker tag autostrapi ghcr.io/glennstreetman/autostrapi:latest && docker push ghcr.io/glennstreetman/autostrapi:latest"
   },
   "dependencies": {
     "@apollo/client": "^3.7.1",
