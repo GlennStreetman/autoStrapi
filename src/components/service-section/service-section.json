@@ -17,14 +17,20 @@
     },
     "sectionText": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "sectionHeader": {
       "type": "string",
       "required": false
     },
     "orderNumber": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
+    },
+    "subChecklist": {
+      "type": "component",
+      "repeatable": true,
+      "component": "service-checklist.service-checklist"
     }
   }
 }

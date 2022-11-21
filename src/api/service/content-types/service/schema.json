@@ -35,6 +35,11 @@
     "shortDescription": {
       "type": "richtext",
       "required": true
+    },
+    "secvicedetail": {
+      "type": "component",
+      "repeatable": true,
+      "component": "service-section.service-section"
     }
   }
 }

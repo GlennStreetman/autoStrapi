@@ -4,14 +4,14 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "develop": "cp .envDevelop .env && strapi develop",
+    "develop": "strapi develop",
     "start": "strapi start",
-    "build": "NODE_ENV=production strapi build",
+    "build": "strapi build",
     "strapi": "strapi",
-    "dUp": "cp .envDev .env && docker-compose -f dev.yml up",
-    "dBuild": "cp .envDev .env &&  docker-compose -f dev.yml up --build",
-    "pUp": "cp .envProd .env && docker-compose -f Prod.yml up",
-    "pBuild": "cp .envProd .env && docker-compose -f Prod.yml up --build",
+    "dUp": "docker-compose -f compose.dev.yml up",
+    "dBuild": "docker-compose -f compose.dev.yml up --build",
+    "pUp": "docker-compose -f compose.prod.yml up",
+    "pBuild": "docker-compose -f compose.prod.yml up --build",
     "pushStrapi": "docker ps | grep autoStrapi | awk {'print $1'} | xargs -i docker commit {} autostrapi &&  docker tag autostrapi ghcr.io/glennstreetman/autostrapi:latest && docker push ghcr.io/glennstreetman/autostrapi:latest"
   },
   "dependencies": {
