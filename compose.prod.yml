@@ -3,7 +3,7 @@
 version: '3'
 services:
   autoStrapi:
-    env_file: .envprod
+    env_file: .envProd
     container_name: autoStrapi
     build:
       context: .

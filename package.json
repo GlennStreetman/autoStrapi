@@ -12,7 +12,8 @@
     "dBuild": "docker-compose -f compose.dev.yml up --build",
     "pUp": "docker-compose -f compose.prod.yml up",
     "pBuild": "docker-compose -f compose.prod.yml up --build",
-    "pushStrapi": "docker ps | grep autoStrapi | awk {'print $1'} | xargs -i docker commit {} autostrapi &&  docker tag autostrapi ghcr.io/glennstreetman/autostrapi:latest && docker push ghcr.io/glennstreetman/autostrapi:latest"
+    "pushStrapi": "docker tag autostrapi:latest 451265639455.dkr.ecr.us-east-2.amazonaws.com/autostrapi:latest && docker push 451265639455.dkr.ecr.us-east-2.amazonaws.com/autostrapi:latest",
+    "pushECR": "docker tag strapi 451265639455.dkr.ecr.us-east-2.amazonaws.com/autostrapi:latest && docker push 451265639455.dkr.ecr.us-east-2.amazonaws.com/autostrapi:latest"
   },
   "dependencies": {
     "@apollo/client": "^3.7.1",
